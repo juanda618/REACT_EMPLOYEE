@@ -4,9 +4,9 @@
     <br />
     <br />
     <p>
-        Build a Modern Dashboard UI Design using React JS, TailwindCSS.
+        Proyecto de prueba para la empresa unow
 </p>
-<a href="https://youtu.be/uHxZMmvQXHQ">Watch Tutorial</a>
+
 
 </div>
 
