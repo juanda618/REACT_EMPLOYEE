@@ -1,6 +1,5 @@
 <br />
 <div align="center">
-    <img src="public/favicon-light.svg" style="vertical-align: middle;" width="48" height="48"/>
     <br />
     <br />
     <p>
@@ -12,9 +11,8 @@
 
 <br />
 
-![Dashboard UI Design](./public/Dashboard%20UI%20Design.png)
 
-## 🗒️ Table of Contents
+## 🗒️ Tabla de contenido 
 
 1. [💬 Introduction](#introduction)
 2. [🛠️ Tools](#tools)
@@ -25,61 +23,77 @@
 
 ## <a name="introduction">💬 Introduction</a>
 
-Welcome to the Dashboard UI Design repository! This project is a comprehensive guide to building a clean, user-friendly, and fully responsive dashboard interface. Whether you're new to UI/UX design or an experienced developer looking to enhance your skills, this repository provides essential resources to help you create an efficient and visually organized dashboard experience. Explore best practices for crafting intuitive layouts, managing data visualization, and ensuring seamless user interaction.
+Este proyecto es una prueba para la empresa unow el desarrollo esta echo en Vit React js y javascript la aplicacion funciona como una aplicacion FrontEnd que consume recursos de una aplicacion Backend creada en laravel que funciona con autenticacion JWT tokens 
 
-## <a name="tools">🛠️ Tools</a>
+la aplicacion tiene varias vistas y un dashboard creado con una plantilla basada en taildwindCSS 
+
+la aplicacion tiene una pantalla de login en la ruta "/" aca el usuario debe loguearse con sus credencailes correo y contraseña donde se hace una peticion al servidor backend laravel y este valida que el usuario exista ademas devuelve un token con la informacion del usuario codificada informacion que se usa dentro de la aplicacion forntend de multiples formas como para acceder a algunas rutas o partes de la aplicacion como tambien para hacer peticiones usando el token a rutas protegidas por el backend.
+
+la ruta de /dashboard es donde esta el panel inicial puse una tabla con tareas para que no se viera vacio
+
+la ruta "/dashboard/list-employees" es donde se encuentra la lista de usuarios tambien se pueden editar y eliminar pero solo el administrador "sw admin" puede acceder a esta seccion y la peticion esta protegida por token
+
+la ruta "/dashboard/register-employee" es donde el usuario admin puede registrar otros usuarios por el usuario "sw admin" y la peticon esta protegida por token
+
+en el icono de la foto en la barra del header o cabecera de la aplicacion se encuentra el icono del usuario ahi se puede editar el usuario asi mismo y tambien darse de baja o eliminar su propio usuario
+
+en la cabecera tambien se encuentra el icono de salida de la aplicacion donde el usuario puede salir de esta eliminar el token creado para el
+
+en la ruta "/register" no se encuentra protegida para el caso de que los usuarios se quieran registrar o ingresar a la aplicacion usando un formulario de registro
+
+
+
+
+
+## <a name="tools">🛠️ Herramientas </a>
 
 -   [React JS](https://react.dev)
 -   [TailwindCSS](https://tailwindcss.com/)
 -   [Lucide Icons](https://lucide.dev/)
 -   [React Router](https://reactrouter.com/en/main)
--   [Recharts](https://recharts.org/en-US/)
+-   react-table (para las tablas)
+-   jwt-decode (decodifica el token y extrae la informacion)
+-   react-toastify (para mensajes emergentes)
 
-## <a name="features">✨ Features</a>
 
--   **Responsive Design:** Ensures your portfolio looks great on desktops, tablets, and mobile devices.
--   **Clean and Modern Layout:** A professional design that highlights your projects, skills, and experience.
+## <a name="features">✨ Caracteristicas </a>
 
-## <a name="getting-started">🚀 Getting Started</a>
+-   El layout es responsive
+-   La aplicacion es reactiva
+-   tiene autenticacion por tokens y las rutas estan protegidas por el mismo
+-   tambien se usa el puesto para restringir rutas segun el rol o la posicion (positon) donde asumo que el cargo "sw admin" es el que tiene todos los               privilegios
+-   se utiliza el recurso endpoint https://ibillboard.com/api/positions para traer las posiciones y agregarlos a los selectores tanto en el formulario de            registro interno como en el externo
+-   
 
-To get started follow these steps:
+## <a name="getting-started">🚀Como iniciar</a>
 
-#### Cloning the Repository
 
-Using CLI
 
-```bash
-git clone https://github.com/xdcode2/dashboard-ui-design.git
-```
+usando GitHub:
 
-**\*\*_Ensure you have installed [Git](https://git-scm.com) on your machine._**
-
-or using GitHub:
-
--   Go to the project [repository](https://github.com/xdcode2/dashboard-ui-design) on my GitHub page
--   Click on the green button on the top 👆
+-   Ir al proyecto 
+-   Click en boton verde arriba 👆
 -   Click Download ZIP
 
-#### Installation
+#### Instalacion
 
-Install the project dependencies using npm:
+Instalar poryecto usando npm:
 
 ```bash
 npm install
 ```
 
-**\*\*_Ensure you have installed [NodeJS](https://nodejs.org/en) on your machine._**
+**\*\*_asegurese de tenr instalado [NodeJS](https://nodejs.org/en) en tu maquina._**
 
-#### Running the Project
+#### Correr el proyecto
 
 ```bash
 npm run dev
 ```
 
-**\*\*_This project uses [Vite](https://vitejs.dev)._**
+**\*\*_Este proyecto usa [Vite](https://vitejs.dev)._**
 
-## <a name="support-me">☕ Support Me</a>
+## <a name="support-me">☕ Support Juan David Vicuña Salazar</a>
 
-[![ko-fi](https://img.shields.io/static/v1?message=Support%20me%20on%20ko-fi&logo=kofi&label=&color=ff5e5b&logoColor=white&labelColor=&style=for-the-badge)](https://ko-fi.com/J3J1NMYT7)
 
-[![youtube](https://img.shields.io/static/v1?message=Subscribe&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge)](https://www.youtube.com/@_xdcode_ "XD Code")
+
