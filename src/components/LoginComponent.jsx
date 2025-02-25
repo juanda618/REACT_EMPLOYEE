@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const LoginComponent = () => {
     const [email, setEmail] = useState('');
@@ -73,6 +74,9 @@ const LoginComponent = () => {
                         >
                             {loading ? 'Iniciando sesión...' : 'Iniciar Sesión'}
                         </button>
+                        <Link to="/register" className="mt-4 text-blue-500 hover:text-blue-700 text-sm">
+                            ¿No tienes cuenta? Regístrate aquí
+                        </Link>
                     </div>
                 </form>
             </div>
